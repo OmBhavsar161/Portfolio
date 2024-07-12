@@ -7,6 +7,7 @@ function App() {
     <>
     <Navbar />
     <Whatido />
+    {/* checking connections */}
     </>
   );
 }
