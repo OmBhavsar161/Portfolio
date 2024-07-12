@@ -3,8 +3,8 @@ export default function Navbar() {
   return (
     <>
       <nav className="relative z-10 flex space-x-80 bg-teal-700 py-3">
-        <h2 className="pl-52 text-3xl text-teal-100">Om Bhavsar</h2>
-        <ul className="flex font-bold text-white space-x-2 pl-48">
+        <h2 className="pl-48 text-3xl text-teal-100">Om Bhavsar</h2>
+        <ul className="flex font-bold text-white space-x-2 pl-20">
           <li>
             <button className={hover}>Home</button>
           </li>
