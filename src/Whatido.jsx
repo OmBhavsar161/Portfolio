@@ -1,6 +1,6 @@
 export default function Whatido() {
   return (
-    <div className="flex justify-center items-center mt-16 ">
+    <div className="flex justify-center items-center mt-24 ">
       <div className="bg-gray-100 text-black text-center p-8 rounded-lg shadow-2xl mb-9 w-8/12">
         <h2 className="text-3xl font-bold mb-2">What I do</h2>
         <div className="flex justify-center pb-2">
