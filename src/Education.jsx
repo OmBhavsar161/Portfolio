@@ -18,10 +18,10 @@ function Education() {
                 <i className="fas fa-code"></i>
               </div>
               <h3 className="mt-4 text-lg font-semibold text-gray-900">
-                Web Development
+                Silver Oak University
               </h3>
               <p className="mt-2 text-base text-gray-500">
-                Create responsive and modern websites.
+                Bachelor of Technology in IT
               </p>
             </div>
             <div className="bg-gray-200 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
@@ -29,10 +29,10 @@ function Education() {
                 <i className="fas fa-paint-brush"></i>
               </div>
               <h3 className="mt-4 text-lg font-semibold text-gray-900">
-                UX/UI Design
+                Swaminarayan School
               </h3>
               <p className="mt-2 text-base text-gray-500">
-                Design user interfaces that are intuitive and engaging.
+                Higher Secondary Education
               </p>
             </div>
           </div>
