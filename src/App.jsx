@@ -1,3 +1,4 @@
+import Contact from "./Contact";
 import Education from "./Education";
 import Navbar from "./Navbar";
 import Whatido from "./Whatido";
@@ -10,6 +11,7 @@ function App() {
     <Navbar />
     <Whatido />
     <Education />
+    {/* <Contact /> */}
     </>
   );
 }
