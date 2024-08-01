@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const hover = "hover:text-teal-900 hover:bg-teal-300 w-full text-left px-4 py-2 rounded-lg";
+  const hover = "w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300";
+  // const hover = "w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300";
 
   return (
     <>
