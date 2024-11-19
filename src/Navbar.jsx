@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const hover = "w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300";
+  const hover =
+    "w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300";
   // const hover = "w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300";
 
   return (
@@ -32,13 +32,27 @@ export default function Navbar() {
               />
             </svg>
           </button>
-          <div className={`w-full md:block md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-default">
+          <div
+            className={`w-full md:block md:w-auto ${
+              isOpen ? "block" : "hidden"
+            }`}
+            id="navbar-default"
+          >
             <ul className="font-bold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-teal-700 md:flex-row md:space-x-4 md:mt-0 md:border-0 md:bg-teal-700">
               <li className="md:inline-flex">
-                <button className={hover}>Home</button>
+                <button className={hover} onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Home</button>
               </li>
               <li className="md:inline-flex">
-                <button className={hover}>Skill</button>
+                <button
+                  className={hover}
+                  onClick={() => {
+                    document.getElementById("whatido")?.scrollIntoView({
+                      behavior: "smooth",
+                    });
+                  }}
+                >
+                  Skill
+                </button>
               </li>
               <li className="md:inline-flex">
                 <button className={hover}>About</button>
@@ -69,25 +83,112 @@ export default function Navbar() {
   );
 }
 
+// --------------------------------------------------------------------------
 
+// import React, { useEffect, useState, useRef } from 'react';
+// import { motion } from 'framer-motion';
 
+// export default function Navbar() {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [inView, setInView] = useState(false);
+//   const ref = useRef(null);
 
+//   // Define animation variants for the name over the image
+//   const variants = {
+//     hidden: { opacity: 0, scale: 0.8 },
+//     visible: { opacity: 1, scale: 1 },
+//   };
 
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(
+//       ([entry]) => {
+//         setInView(entry.isIntersecting);
+//       },
+//       { threshold: 0.1 }
+//     );
 
+//     if (ref.current) {
+//       observer.observe(ref.current);
+//     }
 
+//     return () => {
+//       if (ref.current) {
+//         observer.unobserve(ref.current);
+//       }
+//     };
+//   }, []);
 
+//   return (
+//     <>
+//       <nav className="bg-teal-700 fixed w-full z-20 border-gray-200 text-white">
+//         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+//           <h2 className="text-3xl text-teal-100">Om Bhavsar</h2>
+//           <button
+//             onClick={() => setIsOpen(!isOpen)}
+//             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-teal-200 rounded-lg md:hidden hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-300"
+//           >
+//             <span className="sr-only">Open main menu</span>
+//             <svg
+//               className="w-5 h-5"
+//               aria-hidden="true"
+//               xmlns="http://www.w3.org/2000/svg"
+//               fill="none"
+//               viewBox="0 0 17 14"
+//             >
+//               <path
+//                 stroke="currentColor"
+//                 strokeLinecap="round"
+//                 strokeLinejoin="round"
+//                 strokeWidth="2"
+//                 d="M1 1h15M1 7h15M1 13h15"
+//               />
+//             </svg>
+//           </button>
+//           <div className={`w-full md:block md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-default">
+//             <ul className="font-bold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-teal-700 md:flex-row md:space-x-4 md:mt-0 md:border-0 md:bg-teal-700">
+//               <li className="md:inline-flex">
+//                 <button className="w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300">Home</button>
+//               </li>
+//               <li className="md:inline-flex">
+//                 <button className="w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300">Skill</button>
+//               </li>
+//               <li className="md:inline-flex">
+//                 <button className="w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300">About</button>
+//               </li>
+//               <li className="md:inline-flex">
+//                 <button className="w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300">Education</button>
+//               </li>
+//               <li className="md:inline-flex">
+//                 <button className="w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300">Service</button>
+//               </li>
+//               <li className="md:inline-flex">
+//                 <button className="w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300">Blog</button>
+//               </li>
+//               <li className="md:inline-flex">
+//                 <button className="w-full text-left px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out hover:text-teal-900 hover:bg-teal-300 hover:border-teal-300 hover:shadow-md hover:shadow-teal-300">Contact</button>
+//               </li>
+//             </ul>
+//           </div>
+//         </div>
+//       </nav>
+//       <div className="relative w-full h-[36rem]">
+//         <img src="./image5.jpg" className="w-full h-[36rem] object-cover" alt="Background" />
+//         <motion.div
+//           ref={ref}
+//           initial="hidden"
+//           animate={inView ? 'visible' : 'hidden'}
+//           variants={variants}
+//           transition={{ duration: 0.6 }} // Customize the duration as needed
+//           className="absolute inset-0 flex items-center justify-center text-teal-100 text-6xl"
+//         >
+//           Om Bhavsar
+//         </motion.div>
+//       </div>
+//     </>
+//   );
+// }
 
-
-
-
-
-
-
-
-
-
-
-
+// ----------------------------------------------------------------------------------------------------------
 
 // export default function Navbar() {
 //   const hover = "hover:text-teal-900 hover:bg-teal-300 rounded-md px-4 py-2 ";
