@@ -67,7 +67,7 @@ export default function Whatido() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[{ icon: faCode, title: "Web Development", description: "Create responsive, modern and interactive  websites." },
               { icon: faLaptopCode, title: "Web Design", description: "Create user-friendly web designs and experiences." }, 
-              { icon: faPython, title: "Python", description: "Build efficient and scalable software with Python." },
+              { icon: faPython, title: "Python", description: "Skilled in Python for building efficient, scalable software." },
 
               { icon: faGears, title: "Backend", description: "Creating backends with Node.js, Express, and MongoDB." }]
               .map((card, index) => (
