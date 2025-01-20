@@ -58,11 +58,9 @@ export default function Whatido() {
           <div className="w-32 h-1 bg-emerald-300"></div>
         </div>
         <p className="p-4 text-lg text-justify">
-          Skilled in React development with hands-on experience using hooks,
-          state management, React Router, portals, and props to build dynamic
-          and responsive web applications. Possess basic knowledge of Java and
-          Python, and eager to learn and contribute to projects, tackling
-          upcoming tasks and challenges.
+        Proficient in Python and React development with hands-on experience in building dynamic and responsive web applications. Skilled in Python for writing clean and efficient scripts, handling file operations, and working with data structures like lists, dictionaries, and tuples. Experienced in React hooks, state management, React Router, portals, and props to create interactive user interfaces. Possess basic knowledge of Java and a keen interest in learning and contributing to projects while tackling challenges effectively.
+
+
         </p>
         <div className="mt-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
