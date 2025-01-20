@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faPaintBrush, faMobileAlt, faGears } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faLaptopCode, faGears } from "@fortawesome/free-solid-svg-icons";
+import { faPython } from "@fortawesome/free-brands-svg-icons"; // Correct import for faPython
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -64,9 +65,10 @@ export default function Whatido() {
         </p>
         <div className="mt-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[{ icon: faCode, title: "Web Development", description: "Create responsive and modern websites." },
-              { icon: faPaintBrush, title: "UX/UI Design", description: "Design user interfaces that are intuitive and engaging." },
-              { icon: faMobileAlt, title: "Mobile Design", description: "Develop mobile-friendly interfaces and experiences." },
+            {[{ icon: faCode, title: "Web Development", description: "Create responsive, modern and interactive  websites." },
+              { icon: faLaptopCode, title: "Web Design", description: "Create user-friendly web designs and experiences." }, 
+              { icon: faPython, title: "Python", description: "Build efficient and scalable software with Python." },
+
               { icon: faGears, title: "Backend", description: "Creating backends with Node.js, Express, and MongoDB." }]
               .map((card, index) => (
                 <motion.div
