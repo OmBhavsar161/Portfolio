@@ -41,9 +41,11 @@ export default function Certifications() {
 
   const certifications = [
     { title: "React - The Complete Guide", company: "Udemy", link: "https://www.udemy.com/certificate/UC-94534863-1b41-47d6-be61-a959e3ba2c3d/" },
-    { title: "Python & Django Web Frameworks", company: "Workshop", link: "#" },
+    { title: "Python Essentials", company: "Cisco", link: "https://www.credly.com/badges/7ba732fc-ab86-400e-8d96-af992a5f861c/public_url" },
+    // { title: "Python & Django Web Frameworks", company: "Workshop", link: "#" },
     { title: "JAVA Programming - Beginner to Master ", company: "Udemy", link: "https://www.udemy.com/certificate/UC-d08bd86b-29e7-4d8d-93d3-1370200c98cb/" },
     { title: "Postman API Fundamentals Student Expert", company: "Postman", link: "https://badgr.com/public/assertions/Vp1OsrzlSxSKFXj-zPjxZQ" },
+   
   ];
 
   const handleTransitionEnd = () => {
