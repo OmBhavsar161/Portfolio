@@ -1,4 +1,4 @@
-import Resume from "./assets/Resume/BHAVSAR OM SAMIR.pdf";
+import Resume from "./assets/Resume/Om Bhavsar Resume.pdf";
 
 const Home = () => {
   return (
